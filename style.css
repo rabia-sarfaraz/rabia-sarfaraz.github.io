@@ -44,7 +44,7 @@ a:hover {
 
 .sidebar {
   width: 300px;
-  background: linear-gradient(to bottom, #1a1a1a, #333);
+  background: linear-gradient(to bottom, #2e2e2e, #444);
   padding: 30px;
   text-align: center;
 }
@@ -54,8 +54,9 @@ a:hover {
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  margin: 0 auto 10px;
   border: 3px solid yellow;
+  display: block;
 }
 
 .name {
@@ -75,23 +76,26 @@ a:hover {
 }
 
 .contact-block {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.contact-block p {
-  margin: 5px 0;
+.icon-label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: yellow;
+  margin-bottom: 5px;
 }
 
 .icon {
-  color: yellow;
+  font-size: 18px;
   margin-right: 8px;
-  font-size: 20px;
 }
 
 .contact-detail {
-  margin-left: 30px;
   font-size: 14px;
   color: #ccc;
+  margin-left: 26px;
 }
 
 .content {
