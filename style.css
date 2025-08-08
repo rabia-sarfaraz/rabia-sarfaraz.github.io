@@ -1,12 +1,117 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  padding: 20px;
-  color: #333;
+  background-color: #000;
+  color: #fff;
 }
 
-nav a {
-  margin-right: 15px;
+a {
+  color: white;
   text-decoration: none;
-  color: #0077cc;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #111;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
+
+.top-nav a {
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.top-nav a:hover {
+  background-color: yellow;
+  color: black;
+  border-color: yellow;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #111;
+  padding: 30px;
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.icon {
+  color: yellow;
+  margin-right: 5px;
+}
+
+.content {
+  flex: 1;
+  background-color: #222;
+  padding: 40px;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.skills-columns div {
+  width: 30%;
+}
+
+.skills-columns h3 {
+  margin-bottom: 10px;
+}
+
+.skills-columns ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.portfolio-content {
+  padding: 40px;
+  background-color: #111;
+}
+
+.portfolio-content section {
+  margin-bottom: 60px;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.screenshots img {
+  width: 30%;
+  border-radius: 8px;
+  border: 1px solid #555;
 }
