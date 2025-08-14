@@ -4,6 +4,74 @@
   <meta charset="UTF-8">
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    .top-nav {
+      margin-bottom: 10px;
+    }
+    .top-nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    .portfolio-intro {
+      padding: 20px;
+    }
+    .portfolio-intro h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .portfolio-intro p {
+      text-align: left;
+      margin-top: 0;
+      font-size: 16px;
+    }
+    main {
+      padding: 20px;
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .screenshot-item {
+      position: relative;
+      width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .screenshot-item img {
+      width: 100%;
+      display: block;
+    }
+    .screenshot-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 14px;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,34 +81,80 @@
     </nav>
   </header>
 
+  <section class="portfolio-intro">
+    <h1>Welcome to my Portfolio</h1>
+    <p>Here are some of my projects.</p>
+  </section>
+
   <main class="portfolio-content">
     <section>
-      <h1>Nikah Plus – Marriage Matching App</h1>
+      <h1>Nikah Plus – Marriage Matching App (2025)</h1>
       <p>Nikah Plus is a modern and user-friendly mobile application designed to help individuals find suitable marriage partners based on compatibility, preferences, and values. The app offers features like profile creation, interest selection, secure authentication, and match discovery through a clean and intuitive UI.</p>
       <p>I worked on building the UI using Flutter, implemented secure user registration and login with Firebase Authentication, and handled real-time data using Cloud Firestore. Special focus was given to smooth user experience, privacy, and mobile responsiveness.</p>
       <div class="screenshots">
-        <img src="assets/images/1.png" alt="Nikah Plus Screenshot">
-        <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
-        <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
-        <img src="assets/images/4.png" alt="Nikah Plus Screenshot">
-        <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
-        <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
+        <div class="screenshot-item">
+          <img src="assets/images/1.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">SIGN IN</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">sign in</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">About You-Religious Background</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/4.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">About You-Birthdate</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">Welcome</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
+          <div class="screenshot-label">Discover Matches-Swipe Right</div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h1>Sparkle – Modern Dating App</h1>
+      <h1>Sparkle – Modern Dating App (2025)</h1>
       <p>Sparkle is a sleek, interactive dating app built using Flutter, designed to connect like-minded individuals through intelligent matching, engaging UI, and smooth user experience. The app includes features like gender-based onboarding, interests & personality selection, voice/video introduction, and profile discovery.</p>
       <p>I contributed to designing and developing the front-end using Flutter, implemented smooth screen transitions, and handled user input forms with proper validations. Firebase was used for user authentication and real-time data storage.</p>
       <div class="screenshots">
-        <img src="assets/images/7.png" alt="Sparkle Screenshot">
-        <img src="assets/images/8.png" alt="Sparkle Screenshot">
-        <img src="assets/images/9.png" alt="Sparkle Screenshot">
-        <img src="assets/images/10.png" alt="Sparkle Screenshot">
-        <img src="assets/images/11.png" alt="Sparkle Screenshot">
-        <img src="assets/images/12.png" alt="Sparkle Screenshot">
+        <div class="screenshot-item">
+          <img src="assets/images/7.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">Create an account</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/8.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">Let's know your vibe</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/9.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">VERIFICATION-2</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/10.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">Rohan replies-word 6</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/11.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">Discover Matches-Swipe Right</div>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/12.png" alt="Sparkle Screenshot">
+          <div class="screenshot-label">My Profile</div>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer>
+    <p>© 2025 Rabia Sarfaraz. All rights reserved.</p>
+    <p>Email: <a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
+  </footer>
 </body>
 </html>
