@@ -13,23 +13,21 @@
       color: white;
     }
 
-    /* Header Navigation */
-    header {
-      background-color: #333;
-      padding: 10px 20px;
-    }
+    /* Navigation buttons without header */
     .top-nav {
       display: flex;
       gap: 20px;
+      padding: 10px 20px;
+      background-color: black;
     }
     .top-nav a {
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+      text-decoration: none; /* no underline */
+      font-weight: normal; /* not bold */
       font-size: 16px;
     }
     .top-nav a:hover {
-      text-decoration: underline;
+      text-decoration: none; /* no underline on hover */
     }
 
     main {
@@ -86,7 +84,7 @@
       margin-top: 40px;
       padding: 10px 0;
       border-top: 1px solid #ccc;
-      background-color: #333;
+      background-color: black; /* Black footer background */
       color: white;
     }
 
@@ -95,19 +93,17 @@
       text-decoration: none;
     }
     footer a:hover {
-      text-decoration: underline;
+      text-decoration: none; /* No underline on hover */
     }
   </style>
 </head>
 <body>
 
-  <!-- Header with nav buttons -->
-  <header>
-    <nav class="top-nav">
-      <a href="index.html">About</a>
-      <a href="Portfolio.html">Portfolio</a>
-    </nav>
-  </header>
+  <!-- Navigation buttons -->
+  <nav class="top-nav">
+    <a href="index.html">About</a>
+    <a href="Portfolio.html">Portfolio</a>
+  </nav>
 
   <!-- Main content -->
   <main class="portfolio-content">
@@ -127,7 +123,7 @@
           <img src="assets/images/1.png" alt="Nikah Plus Screenshot">
         </div>
         <div class="screenshot-item">
-          <div class="screenshot-title">SIGN IN</div>
+          <div class="screenshot-title">Sign in</div>
           <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
         </div>
         <div class="screenshot-item">
