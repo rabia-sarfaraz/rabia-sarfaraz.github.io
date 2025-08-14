@@ -10,25 +10,8 @@
       margin: 0;
       padding: 0;
     }
-    header {
-      padding: 20px;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
-    .top-nav {
-      margin-bottom: 10px;
-    }
-    .top-nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-    }
     .portfolio-intro {
       padding: 20px;
-    }
-    .portfolio-intro h1 {
-      text-align: center;
-      margin-bottom: 5px;
     }
     .portfolio-intro p {
       text-align: left;
@@ -53,17 +36,18 @@
       width: 100%;
       display: block;
     }
+    /* Figma-style top label */
     .screenshot-label {
       position: absolute;
-      bottom: 0;
+      top: 0;
       left: 0;
       width: 100%;
       background: rgba(0, 0, 0, 0.6);
       color: white;
-      font-size: 14px;
+      font-size: 16px; /* same as project description text */
       padding: 5px;
       text-align: center;
-      font-weight: bold;
+      font-weight: normal;
     }
     footer {
       text-align: center;
@@ -74,19 +58,12 @@
   </style>
 </head>
 <body>
-  <header>
-    <nav class="top-nav">
-      <a href="index.html">About</a>
-      <a href="Portfolio.html">Portfolio</a>
-    </nav>
-  </header>
-
-  <section class="portfolio-intro">
-    <h1>Welcome to my Portfolio</h1>
-    <p>Here are some of my projects.</p>
-  </section>
 
   <main class="portfolio-content">
+    <section class="portfolio-intro">
+      <p>Here’s my portfolio where I’ve highlighted some of the projects I’ve worked on, including mobile apps built with Flutter and Firebase. They demonstrate my design sense, coding skills, and problem-solving approach.</p>
+    </section>
+
     <section>
       <h1>Nikah Plus – Marriage Matching App (2025)</h1>
       <p>Nikah Plus is a modern and user-friendly mobile application designed to help individuals find suitable marriage partners based on compatibility, preferences, and values. The app offers features like profile creation, interest selection, secure authentication, and match discovery through a clean and intuitive UI.</p>
@@ -98,15 +75,15 @@
         </div>
         <div class="screenshot-item">
           <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">sign in</div>
+          <div class="screenshot-label">SIGN IN</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">About You-Religious Background</div>
+          <div class="screenshot-label">About You - Religious Background</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/4.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">About You-Birthdate</div>
+          <div class="screenshot-label">About You - Birthdate</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
@@ -114,7 +91,7 @@
         </div>
         <div class="screenshot-item">
           <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">Discover Matches-Swipe Right</div>
+          <div class="screenshot-label">Discover Matches - Swipe Right</div>
         </div>
       </div>
     </section>
@@ -134,15 +111,15 @@
         </div>
         <div class="screenshot-item">
           <img src="assets/images/9.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">VERIFICATION-2</div>
+          <div class="screenshot-label">Verification - 2</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/10.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Rohan replies-word 6</div>
+          <div class="screenshot-label">Rohan replies - word 6</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/11.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Discover Matches-Swipe Right</div>
+          <div class="screenshot-label">Discover Matches - Swipe Right</div>
         </div>
         <div class="screenshot-item">
           <img src="assets/images/12.png" alt="Sparkle Screenshot">
@@ -156,5 +133,6 @@
     <p>© 2025 Rabia Sarfaraz. All rights reserved.</p>
     <p>Email: <a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
   </footer>
+
 </body>
 </html>
