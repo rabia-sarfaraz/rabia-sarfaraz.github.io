@@ -9,25 +9,26 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #000; /* Dark background */
+      color: white;
     }
 
-    /* Header styling */
+    /* Header Navigation */
     header {
       background-color: #333;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 10px 20px;
     }
-    header nav a {
+    .top-nav {
+      display: flex;
+      gap: 20px;
+    }
+    .top-nav a {
       color: white;
-      margin-left: 20px;
       text-decoration: none;
+      font-weight: bold;
       font-size: 16px;
     }
-    header nav a:hover {
+    .top-nav a:hover {
       text-decoration: underline;
     }
 
@@ -40,16 +41,16 @@
       padding: 20px 0;
     }
     .portfolio-intro p {
-      font-size: 28px; /* smaller than heading */
+      font-size: 18px;
       margin-top: 0;
-      color: #333;
+      color: white;
     }
 
     /* Section heading */
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       margin-bottom: 10px;
-      color: #222;
+      color: white;
     }
 
     /* Screenshots layout */
@@ -69,8 +70,8 @@
       font-weight: normal;
       text-decoration: underline;
       margin-bottom: 5px;
-      text-align: left; /* left aligned */
-      color: #444;
+      text-align: left;
+      color: white;
     }
 
     .screenshot-item img {
@@ -79,23 +80,32 @@
       display: block;
     }
 
+    /* Footer styling */
     footer {
       text-align: center;
       margin-top: 40px;
       padding: 10px 0;
       border-top: 1px solid #ccc;
-      background-color: #f0f0f0;
+      background-color: #333;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header with nav buttons -->
   <header>
-    <div class="logo">My Portfolio</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
+    <nav class="top-nav">
+      <a href="index.html">About</a>
+      <a href="Portfolio.html">Portfolio</a>
     </nav>
   </header>
 
@@ -121,7 +131,7 @@
           <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
         </div>
         <div class="screenshot-item">
-          <div class="screenshot-title">About You - Religious Background</div>
+          <div class="screenshot-title">About You</div>
           <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
         </div>
         <div class="screenshot-item">
@@ -133,7 +143,7 @@
           <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
         </div>
         <div class="screenshot-item">
-          <div class="screenshot-title">Discover Matches - Swipe Right</div>
+          <div class="screenshot-title">Discover Matches</div>
           <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
         </div>
       </div>
@@ -159,11 +169,11 @@
           <img src="assets/images/9.png" alt="Sparkle Screenshot">
         </div>
         <div class="screenshot-item">
-          <div class="screenshot-title">Rohan replies - word 6</div>
+          <div class="screenshot-title">Rohan replies</div>
           <img src="assets/images/10.png" alt="Sparkle Screenshot">
         </div>
         <div class="screenshot-item">
-          <div class="screenshot-title">Discover Matches - Swipe Right</div>
+          <div class="screenshot-title">Discover Matches</div>
           <img src="assets/images/11.png" alt="Sparkle Screenshot">
         </div>
         <div class="screenshot-item">
