@@ -9,126 +9,172 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
     }
-    .portfolio-intro {
-      padding: 20px;
+
+    /* Header styling */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .portfolio-intro p {
-      text-align: left;
-      margin-top: 0;
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
       font-size: 16px;
     }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
       padding: 20px;
     }
+
+    /* Portfolio intro text */
+    .portfolio-intro {
+      padding: 20px 0;
+    }
+    .portfolio-intro p {
+      font-size: 28px; /* smaller than heading */
+      margin-top: 0;
+      color: #333;
+    }
+
+    /* Section heading */
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    /* Screenshots layout */
     .screenshots {
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 25px;
     }
+
     .screenshot-item {
-      position: relative;
       width: 200px;
-      border-radius: 8px;
-      overflow: hidden;
     }
+
+    /* Label above image */
+    .screenshot-title {
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: underline;
+      margin-bottom: 5px;
+      text-align: left; /* left aligned */
+      color: #444;
+    }
+
     .screenshot-item img {
       width: 100%;
+      border-radius: 8px;
       display: block;
     }
-    /* Figma-style top label */
-    .screenshot-label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      font-size: 16px; /* same as project description text */
-      padding: 5px;
-      text-align: center;
-      font-weight: normal;
-    }
+
     footer {
       text-align: center;
       margin-top: 40px;
       padding: 10px 0;
       border-top: 1px solid #ccc;
+      background-color: #f0f0f0;
     }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
   <main class="portfolio-content">
     <section class="portfolio-intro">
       <p>Here’s my portfolio where I’ve highlighted some of the projects I’ve worked on, including mobile apps built with Flutter and Firebase. They demonstrate my design sense, coding skills, and problem-solving approach.</p>
     </section>
 
+    <!-- Project 1 -->
     <section>
       <h1>Nikah Plus – Marriage Matching App (2025)</h1>
       <p>Nikah Plus is a modern and user-friendly mobile application designed to help individuals find suitable marriage partners based on compatibility, preferences, and values. The app offers features like profile creation, interest selection, secure authentication, and match discovery through a clean and intuitive UI.</p>
       <p>I worked on building the UI using Flutter, implemented secure user registration and login with Firebase Authentication, and handled real-time data using Cloud Firestore. Special focus was given to smooth user experience, privacy, and mobile responsiveness.</p>
+
       <div class="screenshots">
         <div class="screenshot-item">
+          <div class="screenshot-title">SIGN IN</div>
           <img src="assets/images/1.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">SIGN IN</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">SIGN IN</div>
           <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">SIGN IN</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">About You - Religious Background</div>
           <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">About You - Religious Background</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">About You - Birthdate</div>
           <img src="assets/images/4.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">About You - Birthdate</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Welcome</div>
           <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">Welcome</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Discover Matches - Swipe Right</div>
           <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
-          <div class="screenshot-label">Discover Matches - Swipe Right</div>
         </div>
       </div>
     </section>
 
+    <!-- Project 2 -->
     <section>
       <h1>Sparkle – Modern Dating App (2025)</h1>
       <p>Sparkle is a sleek, interactive dating app built using Flutter, designed to connect like-minded individuals through intelligent matching, engaging UI, and smooth user experience. The app includes features like gender-based onboarding, interests & personality selection, voice/video introduction, and profile discovery.</p>
       <p>I contributed to designing and developing the front-end using Flutter, implemented smooth screen transitions, and handled user input forms with proper validations. Firebase was used for user authentication and real-time data storage.</p>
+
       <div class="screenshots">
         <div class="screenshot-item">
+          <div class="screenshot-title">Create an account</div>
           <img src="assets/images/7.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Create an account</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Let's know your vibe</div>
           <img src="assets/images/8.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Let's know your vibe</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Verification - 2</div>
           <img src="assets/images/9.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Verification - 2</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Rohan replies - word 6</div>
           <img src="assets/images/10.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Rohan replies - word 6</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">Discover Matches - Swipe Right</div>
           <img src="assets/images/11.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">Discover Matches - Swipe Right</div>
         </div>
         <div class="screenshot-item">
+          <div class="screenshot-title">My Profile</div>
           <img src="assets/images/12.png" alt="Sparkle Screenshot">
-          <div class="screenshot-label">My Profile</div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Rabia Sarfaraz. All rights reserved.</p>
     <p>Email: <a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
