@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,172 +12,120 @@
       color: white;
     }
 
-    /* Navigation buttons without header */
-    .top-nav {
-      display: flex;
-      gap: 20px;
-      padding: 10px 20px;
-      background-color: black;
+    /* Top description */
+    .page-heading {
+      text-align: center;
+      padding: 30px 20px;
     }
-    .top-nav a {
-      color: white;
-      text-decoration: none; /* no underline */
-      font-weight: normal; /* not bold */
-      font-size: 16px;
+    .page-heading h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
     }
-    .top-nav a:hover {
-      text-decoration: none; /* no underline on hover */
+    .page-heading p {
+      font-size: 18px;
+      color: #ddd;
     }
 
-    main {
+    /* Projects container */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
       padding: 20px;
     }
 
-    /* Portfolio intro text */
-    .portfolio-intro {
-      padding: 20px 0;
-    }
-    .portfolio-intro p {
-      font-size: 18px;
-      margin-top: 0;
-      color: white;
-    }
-
-    /* Section heading */
-    h1 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      color: white;
-    }
-
-    /* Screenshots layout */
-    .screenshots {
+    /* Project Card */
+    .project-card {
+      background-color: #111;
+      border-radius: 12px;
+      width: 280px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
       display: flex;
-      flex-wrap: wrap;
-      gap: 25px;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .screenshot-item {
-      width: 200px;
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
     }
 
-    /* Label above image */
-    .screenshot-title {
-      font-size: 16px;
-      font-weight: normal;
-      text-decoration: underline;
-      margin-bottom: 5px;
-      text-align: left;
+    .project-info {
+      background-color: #222;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .project-info h2 {
+      font-size: 20px;
+      margin: 0 0 8px;
       color: white;
     }
 
-    .screenshot-item img {
-      width: 100%;
-      border-radius: 8px;
-      display: block;
+    .project-info p {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 12px;
     }
 
-    /* Footer styling */
+    .project-info a {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #444;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .project-info a:hover {
+      background-color: #666;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
       margin-top: 40px;
       padding: 10px 0;
-      border-top: 1px solid #ccc;
-      background-color: black; /* Black footer background */
+      border-top: 1px solid #333;
+      background-color: black;
       color: white;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: none; /* No underline on hover */
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation buttons -->
-  <nav class="top-nav">
-    <a href="index.html">About</a>
-    <a href="Portfolio.html">Portfolio</a>
-  </nav>
+  <!-- Top description -->
+  <section class="page-heading">
+    <h1>My Recent Projects</h1>
+    <p>Here are some of my recent works showcasing mobile app design, development, and problem-solving.</p>
+  </section>
 
-  <!-- Main content -->
-  <main class="portfolio-content">
-    <section class="portfolio-intro">
-      <p>Here’s my portfolio where I’ve highlighted some of the projects I’ve worked on, including mobile apps built with Flutter and Firebase. They demonstrate my design sense, coding skills, and problem-solving approach.</p>
-    </section>
-
+  <!-- Projects -->
+  <section class="projects">
     <!-- Project 1 -->
-    <section>
-      <h1>Nikah Plus – Marriage Matching App (2025)</h1>
-      <p>Nikah Plus is a modern and user-friendly mobile application designed to help individuals find suitable marriage partners based on compatibility, preferences, and values. The app offers features like profile creation, interest selection, secure authentication, and match discovery through a clean and intuitive UI.</p>
-      <p>I worked on building the UI using Flutter, implemented secure user registration and login with Firebase Authentication, and handled real-time data using Cloud Firestore. Special focus was given to smooth user experience, privacy, and mobile responsiveness.</p>
-
-      <div class="screenshots">
-        <div class="screenshot-item">
-          <div class="screenshot-title">SIGN IN</div>
-          <img src="assets/images/1.png" alt="Nikah Plus Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Sign in</div>
-          <img src="assets/images/2.png" alt="Nikah Plus Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">About You</div>
-          <img src="assets/images/3.png" alt="Nikah Plus Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">About You - Birthdate</div>
-          <img src="assets/images/4.png" alt="Nikah Plus Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Welcome</div>
-          <img src="assets/images/5.png" alt="Nikah Plus Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Discover Matches</div>
-          <img src="assets/images/6.png" alt="Nikah Plus Screenshot">
-        </div>
+    <div class="project-card">
+      <img src="assets/images/1.png" alt="Nikah Plus">
+      <div class="project-info">
+        <h2>Nikah Plus</h2>
+        <p>Marriage matching app built with Flutter & Firebase. Focused on user-friendly UI & privacy.</p>
+        <a href="https://github.com/rabia-sarfaraz/my_flutter_application" target="_blank">View Repository</a>
       </div>
-    </section>
+    </div>
 
     <!-- Project 2 -->
-    <section>
-      <h1>Sparkle – Modern Dating App (2025)</h1>
-      <p>Sparkle is a sleek, interactive dating app built using Flutter, designed to connect like-minded individuals through intelligent matching, engaging UI, and smooth user experience. The app includes features like gender-based onboarding, interests & personality selection, voice/video introduction, and profile discovery.</p>
-      <p>I contributed to designing and developing the front-end using Flutter, implemented smooth screen transitions, and handled user input forms with proper validations. Firebase was used for user authentication and real-time data storage.</p>
-
-      <div class="screenshots">
-        <div class="screenshot-item">
-          <div class="screenshot-title">Create an account</div>
-          <img src="assets/images/7.png" alt="Sparkle Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Let's know your vibe</div>
-          <img src="assets/images/8.png" alt="Sparkle Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Verification - 2</div>
-          <img src="assets/images/9.png" alt="Sparkle Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Rohan replies</div>
-          <img src="assets/images/10.png" alt="Sparkle Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">Discover Matches</div>
-          <img src="assets/images/11.png" alt="Sparkle Screenshot">
-        </div>
-        <div class="screenshot-item">
-          <div class="screenshot-title">My Profile</div>
-          <img src="assets/images/12.png" alt="Sparkle Screenshot">
-        </div>
+    <div class="project-card">
+      <img src="assets/images/7.png" alt="Sparkle">
+      <div class="project-info">
+        <h2>Sparkle</h2>
+        <p>Modern dating app with Flutter. Includes onboarding, interest selection & real-time chat.</p>
+        <a href="https://github.com/rabia-sarfaraz/sparkle_dating_auth" target="_blank">View Repository</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
