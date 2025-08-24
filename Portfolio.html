@@ -12,10 +12,10 @@
       color: white;
     }
 
-    /* Navigation buttons (same as index) */
+    /* Navigation buttons */
     .top-nav {
       display: flex;
-      justify-content: flex-end; /* move to top right */
+      justify-content: flex-end;
       gap: 20px;
       padding: 10px 20px;
       background-color: black;
@@ -25,10 +25,13 @@
       text-decoration: none;
       font-weight: normal;
       font-size: 16px;
-      transition: color 0.3s ease;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     .top-nav a:hover {
-      color: yellow;
+      background-color: yellow;
+      color: black;
     }
 
     /* Top description */
@@ -86,7 +89,7 @@
 
     .project-info p {
       font-size: 14px;
-      color: white; /* text white now */
+      color: white;
       margin-bottom: 12px;
     }
 
@@ -101,8 +104,8 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
     .project-info a:hover {
-      background-color: yellow; /* button bg yellow */
-      color: black; /* text stays visible */
+      background-color: yellow;
+      color: black;
     }
 
     footer {
