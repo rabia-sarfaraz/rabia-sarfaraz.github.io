@@ -8,13 +8,14 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000; /* Dark background */
+      background-color: #000;
       color: white;
     }
 
-    /* Navigation buttons */
+    /* Navigation buttons (same as index) */
     .top-nav {
       display: flex;
+      justify-content: flex-end; /* move to top right */
       gap: 20px;
       padding: 10px 20px;
       background-color: black;
@@ -27,7 +28,7 @@
       transition: color 0.3s ease;
     }
     .top-nav a:hover {
-      color: yellow; /* hover color yellow */
+      color: yellow;
     }
 
     /* Top description */
@@ -53,7 +54,6 @@
       padding: 20px;
     }
 
-    /* Project Card (smaller dimension) */
     .project-card {
       background-color: #111;
       border-radius: 12px;
@@ -86,7 +86,7 @@
 
     .project-info p {
       font-size: 14px;
-      color: #bbb;
+      color: white; /* text white now */
       margin-bottom: 12px;
     }
 
@@ -101,11 +101,10 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
     .project-info a:hover {
-      background-color: #666;
-      color: yellow; /* text color yellow on hover */
+      background-color: yellow; /* button bg yellow */
+      color: black; /* text stays visible */
     }
 
-    /* Footer */
     footer {
       text-align: center;
       margin-top: 40px;
@@ -114,7 +113,6 @@
       background-color: black;
       color: white;
     }
-
     footer a {
       color: white;
       text-decoration: none;
