@@ -71,10 +71,17 @@
     .sidebar {
       width: 250px;
     }
+
+    /* ✅ Perfect Circle Profile Picture */
     .profile-pic {
-      width: 100%;
-      border-radius: 50%; /* 🔥 profile picture circle */
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
     }
+
     .content {
       flex: 1;
     }
@@ -121,7 +128,6 @@
           <div>
             <h3>Technical Skills</h3>
             <ul>
-              <!-- 🔥 Flutter icon updated -->
               <li><i class="fa-solid fa-mobile-screen"></i> Flutter</li>
               <li><i class="fa-solid fa-code"></i> Dart</li>
               <li><i class="fa-brands fa-html5"></i> HTML and CSS</li>
