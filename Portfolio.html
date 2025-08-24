@@ -12,6 +12,23 @@
       color: white;
     }
 
+    /* Navigation buttons without header */
+    .top-nav {
+      display: flex;
+      gap: 20px;
+      padding: 10px 20px;
+      background-color: black;
+    }
+    .top-nav a {
+      color: white;
+      text-decoration: none; /* no underline */
+      font-weight: normal;
+      font-size: 16px;
+    }
+    .top-nav a:hover {
+      text-decoration: none; /* no underline on hover */
+    }
+
     /* Top description */
     .page-heading {
       text-align: center;
@@ -30,7 +47,7 @@
     .projects {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
       justify-content: center;
       padding: 20px;
     }
@@ -39,7 +56,7 @@
     .project-card {
       background-color: #111;
       border-radius: 12px;
-      width: 280px;
+      max-width: 420px;  /* thoda bada size */
       overflow: hidden;
       box-shadow: 0 0 10px rgba(255,255,255,0.1);
       display: flex;
@@ -49,8 +66,8 @@
 
     .project-card img {
       width: 100%;
-      height: 160px;
-      object-fit: cover;
+      height: auto; /* pura screenshot jitna hai utna dikhayega */
+      display: block;
     }
 
     .project-info {
@@ -61,13 +78,13 @@
     }
 
     .project-info h2 {
-      font-size: 20px;
+      font-size: 22px;
       margin: 0 0 8px;
       color: white;
     }
 
     .project-info p {
-      font-size: 14px;
+      font-size: 15px;
       color: #bbb;
       margin-bottom: 12px;
     }
@@ -94,9 +111,23 @@
       background-color: black;
       color: white;
     }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation buttons -->
+  <nav class="top-nav">
+    <a href="index.html">About</a>
+    <a href="Portfolio.html">Portfolio</a>
+  </nav>
 
   <!-- Top description -->
   <section class="page-heading">
