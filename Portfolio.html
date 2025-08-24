@@ -12,7 +12,7 @@
       color: white;
     }
 
-    /* Navigation buttons without header */
+    /* Navigation buttons */
     .top-nav {
       display: flex;
       gap: 20px;
@@ -21,12 +21,13 @@
     }
     .top-nav a {
       color: white;
-      text-decoration: none; /* no underline */
+      text-decoration: none;
       font-weight: normal;
       font-size: 16px;
+      transition: color 0.3s ease;
     }
     .top-nav a:hover {
-      text-decoration: none; /* no underline on hover */
+      color: yellow; /* hover color yellow */
     }
 
     /* Top description */
@@ -52,11 +53,11 @@
       padding: 20px;
     }
 
-    /* Project Card */
+    /* Project Card (smaller dimension) */
     .project-card {
       background-color: #111;
       border-radius: 12px;
-      max-width: 420px;  /* thoda bada size */
+      max-width: 340px;
       overflow: hidden;
       box-shadow: 0 0 10px rgba(255,255,255,0.1);
       display: flex;
@@ -66,7 +67,7 @@
 
     .project-card img {
       width: 100%;
-      height: auto; /* pura screenshot jitna hai utna dikhayega */
+      height: auto;
       display: block;
     }
 
@@ -78,13 +79,13 @@
     }
 
     .project-info h2 {
-      font-size: 22px;
+      font-size: 20px;
       margin: 0 0 8px;
       color: white;
     }
 
     .project-info p {
-      font-size: 15px;
+      font-size: 14px;
       color: #bbb;
       margin-bottom: 12px;
     }
@@ -97,9 +98,11 @@
       border-radius: 6px;
       text-decoration: none;
       font-size: 14px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     .project-info a:hover {
       background-color: #666;
+      color: yellow; /* text color yellow on hover */
     }
 
     /* Footer */
@@ -115,9 +118,10 @@
     footer a {
       color: white;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     footer a:hover {
-      text-decoration: none;
+      color: yellow;
     }
   </style>
 </head>
