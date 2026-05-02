@@ -23,12 +23,11 @@
     .top-nav a {
       color: white;
       text-decoration: none;
-      font-weight: normal;
       font-size: 16px;
       padding: 6px 14px;
       border-radius: 6px;
       border: 2px solid white;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition: 0.3s;
     }
 
     .top-nav a:hover {
@@ -39,11 +38,11 @@
 
     .page-heading {
       text-align: center;
-      padding: 30px 20px;
+      padding: 35px 20px;
     }
 
     .page-heading h1 {
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 10px;
       color: yellow;
     }
@@ -51,6 +50,9 @@
     .page-heading p {
       font-size: 18px;
       color: #ddd;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
     }
 
     .projects {
@@ -58,7 +60,7 @@
       flex-wrap: wrap;
       gap: 25px;
       justify-content: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
     .project-card {
@@ -74,7 +76,7 @@
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
 
     .project-card img {
@@ -86,19 +88,19 @@
     .project-info {
       background-color: #222;
       width: 100%;
-      padding: 12px;
+      padding: 14px;
       text-align: center;
     }
 
     .project-info h2 {
       font-size: 18px;
-      margin: 0 0 6px;
-      color: yellow;
+      margin-bottom: 6px;
+      color: white;
     }
 
     .project-info p {
       font-size: 13px;
-      color: white;
+      color: #ddd;
       margin-bottom: 10px;
       line-height: 1.5;
     }
@@ -111,7 +113,7 @@
       border-radius: 6px;
       text-decoration: none;
       font-size: 13px;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      transition: 0.3s;
     }
 
     .project-info a:hover {
@@ -122,7 +124,7 @@
     footer {
       text-align: center;
       margin-top: 40px;
-      padding: 10px 0;
+      padding: 12px 0;
       border-top: 1px solid #333;
       background-color: black;
       color: white;
@@ -147,7 +149,10 @@
 
   <section class="page-heading">
     <h1>My Recent Projects</h1>
-    <p>Portfolio showcasing Full Stack Applications, SaaS Platforms, AI Agents, and Intelligent Automation Systems.</p>
+    <p>
+      Showcasing Full Stack Applications, SaaS Platforms, AI Agents, and intelligent automation systems 
+      built for real-world business use cases.
+    </p>
   </section>
 
   <section class="projects">
@@ -157,7 +162,7 @@
       <img src="assets/images/1.png" alt="Nikah Plus">
       <div class="project-info">
         <h2>Nikah Plus</h2>
-        <p>Marriage matching app built with Flutter & Firebase. Focused on user-friendly UI and privacy-first architecture.</p>
+        <p>Marriage matching app built with Flutter & Firebase with strong focus on UX and privacy.</p>
         <a href="https://github.com/rabia-sarfaraz/my_flutter_application" target="_blank">View Repository</a>
       </div>
     </div>
@@ -166,7 +171,7 @@
       <img src="assets/images/7.png" alt="Sparkle">
       <div class="project-info">
         <h2>Sparkle</h2>
-        <p>Modern dating platform with onboarding, interest matching, and real-time chat built in Flutter.</p>
+        <p>Modern dating app with onboarding, interest matching, and real-time chat features.</p>
         <a href="https://github.com/rabia-sarfaraz/sparkle_dating_auth" target="_blank">View Repository</a>
       </div>
     </div>
@@ -175,91 +180,67 @@
       <img src="assets/images/20.png" alt="Country Info">
       <div class="project-info">
         <h2>Country Info</h2>
-        <p>Country information app using external APIs to provide live demographic and geographical data.</p>
+        <p>API-based app to explore countries, including flag, capital, and population details.</p>
         <a href="https://github.com/rabia-sarfaraz/country.git" target="_blank">View Repository</a>
       </div>
     </div>
 
     <!-- SaaS Projects -->
     <div class="project-card">
-      <img src="assets/images/saas1.png" alt="CRM SaaS">
+      <img src="assets/images/saas1.png">
       <div class="project-info">
         <h2>CRM SaaS Platform</h2>
-        <p>Multi-tenant CRM with subscription billing, role-based access, client pipelines, and admin analytics.</p>
+        <p>Multi-tenant CRM system with role-based access, dashboards, and subscription logic.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="assets/images/saas2.png" alt="HR SaaS">
+      <img src="assets/images/saas2.png">
       <div class="project-info">
         <h2>HR Management SaaS</h2>
-        <p>Enterprise HR system with payroll, attendance tracking, employee dashboards, and reporting tools.</p>
+        <p>Complete HR solution with payroll, attendance tracking, and admin reporting tools.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="assets/images/saas3.png" alt="Booking SaaS">
+      <img src="assets/images/saas3.png">
       <div class="project-info">
-        <h2>Booking Automation SaaS</h2>
-        <p>Scheduling and appointment automation platform with calendar integrations and reminders.</p>
+        <h2>Booking SaaS System</h2>
+        <p>Appointment scheduling platform with calendar sync and automated reminders.</p>
       </div>
     </div>
 
+    <!-- AI Agents -->
     <div class="project-card">
-      <img src="assets/images/saas4.png" alt="Analytics SaaS">
-      <div class="project-info">
-        <h2>Business Analytics SaaS</h2>
-        <p>Data visualization and KPI reporting dashboard for business intelligence and decision support.</p>
-      </div>
-    </div>
-
-    <!-- AI Agent Projects -->
-    <div class="project-card">
-      <img src="assets/images/ai1.png" alt="AI Support Agent">
+      <img src="assets/images/saas8.png">
       <div class="project-info">
         <h2>AI Support Agent</h2>
-        <p>Customer support automation agent integrated with internal docs and ticket workflows.</p>
+        <p>Automated customer support agent integrated with knowledge base and workflows.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="assets/images/ai2.png" alt="AI Sales Agent">
+      <img src="assets/images/saas5.png">
       <div class="project-info">
         <h2>AI Sales Agent</h2>
-        <p>Lead qualification and customer interaction automation using LLM-driven workflows.</p>
+        <p>Lead qualification and sales automation using LLM-based decision systems.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <img src="assets/images/ai3.png" alt="AI Data Agent">
-      <div class="project-info">
-        <h2>AI Data Analysis Agent</h2>
-        <p>Business intelligence AI that processes structured data and generates actionable summaries.</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/ai4.png" alt="Workflow Agent">
+      <img src="assets/images/saas6.png">
       <div class="project-info">
         <h2>Workflow Automation Agent</h2>
-        <p>Agent system connecting APIs, DBs, and AI logic to automate repetitive business processes.</p>
+        <p>AI agent connecting APIs and databases to automate business operations.</p>
       </div>
     </div>
 
+    <!-- Chatbot -->
     <div class="project-card">
-      <img src="assets/images/ai5.png" alt="Document Agent">
-      <div class="project-info">
-        <h2>Document Processing Agent</h2>
-        <p>AI system for extracting, summarizing, and categorizing documents automatically.</p>
-      </div>
-    </div>
-
-    <!-- Chatbot Project -->
-    <div class="project-card">
-      <img src="assets/images/chatbot.png" alt="AI Chatbot">
+      <img src="assets/images/saas7.png">
       <div class="project-info">
         <h2>Enterprise AI Chatbot</h2>
-        <p>Custom conversational AI chatbot integrated with business knowledge base and workflow actions.</p>
+        <p>Custom chatbot with LLM integration for business workflows and user interaction.</p>
       </div>
     </div>
 
