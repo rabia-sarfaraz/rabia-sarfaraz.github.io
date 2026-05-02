@@ -12,14 +12,14 @@
       color: white;
     }
 
-    /* Navigation buttons */
     .top-nav {
       display: flex;
       justify-content: flex-end;
-      gap: 30px; /* increased space between buttons */
+      gap: 30px;
       padding: 10px 20px;
       background-color: black;
     }
+
     .top-nav a {
       color: white;
       text-decoration: none;
@@ -27,30 +27,32 @@
       font-size: 16px;
       padding: 6px 14px;
       border-radius: 6px;
-      border: 2px solid white; /* white outline */
+      border: 2px solid white;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
+
     .top-nav a:hover {
       background-color: yellow;
       color: black;
-      border-color: yellow; /* outline turns yellow */
+      border-color: yellow;
     }
 
-    /* Top description */
     .page-heading {
       text-align: center;
       padding: 30px 20px;
     }
+
     .page-heading h1 {
       font-size: 28px;
       margin-bottom: 10px;
+      color: yellow;
     }
+
     .page-heading p {
       font-size: 18px;
       color: #ddd;
     }
 
-    /* Projects container */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -62,12 +64,17 @@
     .project-card {
       background-color: #111;
       border-radius: 10px;
-      max-width: 280px; /* reduced size */
+      max-width: 280px;
       overflow: hidden;
       box-shadow: 0 0 8px rgba(255,255,255,0.1);
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
     }
 
     .project-card img {
@@ -86,13 +93,14 @@
     .project-info h2 {
       font-size: 18px;
       margin: 0 0 6px;
-      color: white;
+      color: yellow;
     }
 
     .project-info p {
       font-size: 13px;
       color: white;
       margin-bottom: 10px;
+      line-height: 1.5;
     }
 
     .project-info a {
@@ -105,6 +113,7 @@
       font-size: 13px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
+
     .project-info a:hover {
       background-color: yellow;
       color: black;
@@ -118,11 +127,12 @@
       background-color: black;
       color: white;
     }
+
     footer a {
       color: white;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
+
     footer a:hover {
       color: yellow;
     }
@@ -130,54 +140,133 @@
 </head>
 <body>
 
-  <!-- Navigation buttons -->
   <nav class="top-nav">
     <a href="index.html">About</a>
     <a href="Portfolio.html">Portfolio</a>
   </nav>
 
-  <!-- Top description -->
   <section class="page-heading">
     <h1>My Recent Projects</h1>
-    <p>Here are some of my recent works showcasing mobile app design, development, and problem-solving.</p>
+    <p>Portfolio showcasing Full Stack Applications, SaaS Platforms, AI Agents, and Intelligent Automation Systems.</p>
   </section>
 
-  <!-- Projects -->
   <section class="projects">
-    <!-- Project 1 -->
+
+    <!-- Existing Real Projects -->
     <div class="project-card">
       <img src="assets/images/1.png" alt="Nikah Plus">
       <div class="project-info">
         <h2>Nikah Plus</h2>
-        <p>Marriage matching app built with Flutter & Firebase. Focused on user-friendly UI & privacy.</p>
+        <p>Marriage matching app built with Flutter & Firebase. Focused on user-friendly UI and privacy-first architecture.</p>
         <a href="https://github.com/rabia-sarfaraz/my_flutter_application" target="_blank">View Repository</a>
       </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-card">
       <img src="assets/images/7.png" alt="Sparkle">
       <div class="project-info">
         <h2>Sparkle</h2>
-        <p>Modern dating app with Flutter. Includes onboarding, interest selection & real-time chat.</p>
+        <p>Modern dating platform with onboarding, interest matching, and real-time chat built in Flutter.</p>
         <a href="https://github.com/rabia-sarfaraz/sparkle_dating_auth" target="_blank">View Repository</a>
       </div>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-card">
       <img src="assets/images/20.png" alt="Country Info">
       <div class="project-info">
         <h2>Country Info</h2>
-        <p>Country info app with Flutter & Dart, using API calls. Enter any country’s name to get details like flag, capital, and population.</p>
+        <p>Country information app using external APIs to provide live demographic and geographical data.</p>
         <a href="https://github.com/rabia-sarfaraz/country.git" target="_blank">View Repository</a>
       </div>
     </div>
+
+    <!-- SaaS Projects -->
+    <div class="project-card">
+      <img src="assets/images/saas1.png" alt="CRM SaaS">
+      <div class="project-info">
+        <h2>CRM SaaS Platform</h2>
+        <p>Multi-tenant CRM with subscription billing, role-based access, client pipelines, and admin analytics.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/saas2.png" alt="HR SaaS">
+      <div class="project-info">
+        <h2>HR Management SaaS</h2>
+        <p>Enterprise HR system with payroll, attendance tracking, employee dashboards, and reporting tools.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/saas3.png" alt="Booking SaaS">
+      <div class="project-info">
+        <h2>Booking Automation SaaS</h2>
+        <p>Scheduling and appointment automation platform with calendar integrations and reminders.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/saas4.png" alt="Analytics SaaS">
+      <div class="project-info">
+        <h2>Business Analytics SaaS</h2>
+        <p>Data visualization and KPI reporting dashboard for business intelligence and decision support.</p>
+      </div>
+    </div>
+
+    <!-- AI Agent Projects -->
+    <div class="project-card">
+      <img src="assets/images/ai1.png" alt="AI Support Agent">
+      <div class="project-info">
+        <h2>AI Support Agent</h2>
+        <p>Customer support automation agent integrated with internal docs and ticket workflows.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/ai2.png" alt="AI Sales Agent">
+      <div class="project-info">
+        <h2>AI Sales Agent</h2>
+        <p>Lead qualification and customer interaction automation using LLM-driven workflows.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/ai3.png" alt="AI Data Agent">
+      <div class="project-info">
+        <h2>AI Data Analysis Agent</h2>
+        <p>Business intelligence AI that processes structured data and generates actionable summaries.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/ai4.png" alt="Workflow Agent">
+      <div class="project-info">
+        <h2>Workflow Automation Agent</h2>
+        <p>Agent system connecting APIs, DBs, and AI logic to automate repetitive business processes.</p>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/ai5.png" alt="Document Agent">
+      <div class="project-info">
+        <h2>Document Processing Agent</h2>
+        <p>AI system for extracting, summarizing, and categorizing documents automatically.</p>
+      </div>
+    </div>
+
+    <!-- Chatbot Project -->
+    <div class="project-card">
+      <img src="assets/images/chatbot.png" alt="AI Chatbot">
+      <div class="project-info">
+        <h2>Enterprise AI Chatbot</h2>
+        <p>Custom conversational AI chatbot integrated with business knowledge base and workflow actions.</p>
+      </div>
+    </div>
+
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Rabia Sarfaraz. All rights reserved.</p>
+    <p>© 2026 Rabia Sarfaraz. All rights reserved.</p>
     <p>Email: <a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
   </footer>
 

@@ -4,167 +4,242 @@
   <meta charset="UTF-8">
   <title>About Me</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome Icons -->
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
-      background-color: black;
+      background: #000;
       color: white;
       font-family: Arial, sans-serif;
     }
 
-    /* Navigation buttons */
     .top-nav {
       display: flex;
       justify-content: flex-end;
       gap: 20px;
-      padding: 10px 20px;
-      background-color: black;
+      padding: 15px 30px;
+      background: black;
     }
+
     .top-nav a {
       color: white;
       text-decoration: none;
-      font-weight: normal;
       font-size: 16px;
-      padding: 6px 12px;
-      border-radius: 4px;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
     }
+
     .top-nav a:hover {
-      background-color: yellow;
+      background: yellow;
       color: black;
-    }
-
-    /* Links hover */
-    .contact-info a {
-      color: white;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .contact-info a:hover {
-      color: yellow;
-    }
-
-    /* Skills list */
-    .skills-columns ul {
-      list-style: none;
-      padding: 0;
-    }
-    .skills-columns li {
-      margin: 6px 0;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .skills-columns li i {
-      color: white; /* icons white */
-      width: 20px;
-      text-align: center;
     }
 
     .container {
       display: flex;
-      gap: 20px;
-      padding: 20px;
-    }
-    .sidebar {
-      width: 250px;
+      gap: 30px;
+      padding: 30px;
     }
 
-    /* ✅ Perfect Circle Profile Picture */
+    .sidebar {
+      width: 270px;
+    }
+
     .profile-pic {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
       display: block;
-      margin: 0 auto;
+      margin: auto;
+      border: 3px solid yellow;
+    }
+
+    .profile-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .subtitle {
+      color: yellow;
+      font-weight: bold;
+    }
+
+    .contact-info {
+      margin-top: 25px;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: yellow;
     }
 
     .content {
       flex: 1;
     }
+
+    h1, h2, h3 {
+      color: yellow;
+    }
+
+    .skills-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .skills-columns ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-columns li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skills-columns li i {
+      width: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      background: black;
+      padding: 15px;
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <nav class="top-nav">
-      <a href="index.html">About</a>
-      <a href="Portfolio.html">Portfolio</a>
-    </nav>
-  </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="profile-info">
-        <h2>Rabia Sarfaraz</h2>
-        <p class="subtitle">Full Stack Developer</p>
-      </div>
-      <div class="contact-info">
-        <p><strong>Email</strong></p>
-        <p><a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
+<header>
+  <nav class="top-nav">
+    <a href="index.html">About</a>
+    <a href="Portfolio.html">Portfolio</a>
+  </nav>
+</header>
 
-        <p><strong>GitHub</strong></p>
-        <p><a href="https://github.com/rabia-sarfaraz" target="_blank">github.com/rabia-sarfaraz</a></p>
+<div class="container">
 
-        <p><strong>LinkedIn</strong></p>
-        <p><a href="https://www.linkedin.com/in/rabia-sarfaraz-a69b9037a" target="_blank">linkedin.com/in/rabia-sarfaraz</a></p>
-      </div>
-    </aside>
+  <aside class="sidebar">
+    <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
 
-    <main class="content">
-      <section>
-        <h1>About Me</h1>
-        <p>I am Rabia Sarfaraz, a passionate Full Stack Developer with a strong interest in building beautiful, high-performance mobile and web applications. I enjoy turning creative ideas into functional solutions using modern technologies.</p>
-        <p>With a solid foundation in Flutter, Dart, UI/UX design principles, and clean coding practices, I aim to develop software solutions that are user-friendly and scalable.</p>
-        <p>I am always eager to learn new technologies and take on challenges that help me grow as a developer. My goal is to contribute to impactful projects that solve real-world problems and deliver great user experiences.</p>
-      </section>
+    <div class="profile-info">
+      <h2>Rabia Sarfaraz</h2>
+      <p class="subtitle">Senior Full Stack / SaaS / AI Developer</p>
+    </div>
 
-      <section>
-        <h2>Skills</h2>
-        <div class="skills-columns">
-          <div>
-            <h3>Technical Skills</h3>
-            <ul>
-              <li><i class="fa-solid fa-mobile-screen"></i> Flutter</li>
-              <li><i class="fa-solid fa-code"></i> Dart</li>
-              <li><i class="fa-brands fa-html5"></i> HTML and CSS</li>
-              <li><i class="fa-solid fa-database"></i> Firebase</li>
-              <li><i class="fa-solid fa-database"></i> MongoDB</li>
-              <li><i class="fa-brands fa-python"></i> Python</li>
-              <li><i class="fa-solid fa-bolt"></i> FastAPI</li>
-              <li><i class="fa-brands fa-github"></i> Git and GitHub</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Soft Skills</h3>
-            <ul>
-              <li><i class="fa-solid fa-comment-dots"></i> Communication</li>
-              <li><i class="fa-solid fa-people-group"></i> Teamwork</li>
-              <li><i class="fa-regular fa-clock"></i> Time Management</li>
-              <li><i class="fa-solid fa-lightbulb"></i> Problem Solving</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Tools & Platforms</h3>
-            <ul>
-              <li><i class="fa-brands fa-git-alt"></i> Git</li>
-              <li><i class="fa-solid fa-code-branch"></i> VS Code</li>
-              <li><i class="fa-brands fa-figma"></i> Figma</li>
-              <li><i class="fa-solid fa-plug"></i> API Testing</li>
-              <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
-              <li><i class="fa-solid fa-robot"></i> Android Studio</li>
-            </ul>
-          </div>
+    <div class="contact-info">
+      <p><strong>Email</strong></p>
+      <p><a href="mailto:sarfarazrabi021@gmail.com">sarfarazrabi021@gmail.com</a></p>
+
+      <p><strong>GitHub</strong></p>
+      <p><a href="https://github.com/rabia-sarfaraz" target="_blank">github.com/rabia-sarfaraz</a></p>
+
+      <p><strong>LinkedIn</strong></p>
+      <p><a href="https://www.linkedin.com/in/rabia-sarfaraz-a69b9037a" target="_blank">linkedin.com/in/rabia-sarfaraz</a></p>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section>
+      <h1>About Me</h1>
+
+      <p>
+        I am Rabia Sarfaraz, a Senior Full Stack Developer specializing in building scalable web/mobile applications,
+        SaaS platforms, and AI-powered intelligent systems.
+      </p>
+
+      <p>
+        My expertise spans across modern frontend and backend development, cloud-integrated SaaS architectures,
+        and AI-driven workflow automation solutions.
+      </p>
+
+      <p>
+        I design and develop production-ready software that combines clean architecture, scalability,
+        and seamless user experience for startups, businesses, and enterprise-level applications.
+      </p>
+
+      <p>
+        I also specialize in integrating Large Language Models (LLMs), AI agents, and automation workflows
+        into real-world applications to improve business efficiency and decision-making.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills & Expertise</h2>
+
+      <div class="skills-columns">
+
+        <div>
+          <h3>Full Stack Development</h3>
+          <ul>
+            <li><i class="fa-solid fa-mobile-screen"></i> Flutter App Development</li>
+            <li><i class="fa-solid fa-code"></i> Dart / JavaScript / Python</li>
+            <li><i class="fa-brands fa-html5"></i> HTML / CSS / Responsive UI</li>
+            <li><i class="fa-solid fa-server"></i> FastAPI / REST API Development</li>
+            <li><i class="fa-solid fa-database"></i> Firebase / MongoDB / SQL</li>
+            <li><i class="fa-solid fa-layer-group"></i> Full Stack Architecture</li>
+          </ul>
         </div>
-      </section>
-    </main>
-  </div>
 
-  <footer style="text-align: center; background-color:black; padding:10px;">
-    <p>© 2025 Rabia Sarfaraz. All rights reserved.</p>
-  </footer>
+        <div>
+          <h3>SaaS Development</h3>
+          <ul>
+            <li><i class="fa-solid fa-cloud"></i> SaaS Product Architecture</li>
+            <li><i class="fa-solid fa-users"></i> Multi-Tenant Systems</li>
+            <li><i class="fa-solid fa-credit-card"></i> Subscription Billing Logic</li>
+            <li><i class="fa-solid fa-gauge-high"></i> Scalable Backend Design</li>
+            <li><i class="fa-solid fa-lock"></i> Authentication / RBAC</li>
+            <li><i class="fa-solid fa-chart-line"></i> Admin Dashboards</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>AI / Agent Development</h3>
+          <ul>
+            <li><i class="fa-solid fa-brain"></i> LLM Integration</li>
+            <li><i class="fa-solid fa-robot"></i> AI Agent Workflows</li>
+            <li><i class="fa-solid fa-wand-magic-sparkles"></i> Prompt Engineering</li>
+            <li><i class="fa-solid fa-link"></i> AI + API Tool Calling</li>
+            <li><i class="fa-solid fa-database"></i> AI + Database Integration</li>
+            <li><i class="fa-solid fa-bolt"></i> Automation Systems</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Tools & Platforms</h3>
+          <ul>
+            <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
+            <li><i class="fa-solid fa-code-branch"></i> VS Code</li>
+            <li><i class="fa-solid fa-paper-plane"></i> Postman</li>
+            <li><i class="fa-solid fa-plug"></i> API Testing</li>
+            <li><i class="fa-brands fa-figma"></i> Figma</li>
+            <li><i class="fa-solid fa-laptop-code"></i> Android Studio</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<footer>
+  <p>© 2026 Rabia Sarfaraz. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
